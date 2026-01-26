@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tech Mak Solutions – High-Strength Forged & Machined Components with World-Class Quality</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- ================= TOP HEADER ================= -->
+    <header id="topHeader" class="bg-black fixed-top">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="Logo" width="150" height="40">
+                </a>
+
+                <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="topNav">
+                    <div class="navbar-nav text-center text-lg-start gap-2 gap-lg-3">
+                        <a href="mailto:info@apexitsolution.in" class="nav-link text-white">
+                            <i class="fa-solid fa-envelope"></i> info@teckmaksolution.com
+                        </a>
+                        <a href="mailto:hr@apexitsolution.in" class="nav-link text-white">
+                            <i class="fa-solid fa-envelope"></i> hr@teckmaksolution.com
+                        </a>
+                        <a href="tel:+918956889634" class="nav-link text-white">
+                            <i class="fa-solid fa-phone"></i> +91 XXXXX XXXXX
+                        </a>
+                        <a href="tel:+918010410293" class="nav-link text-white">
+                            <i class="fa-solid fa-phone"></i> +91 XXXXX XXXXX
+                        </a>
+                        <a href="./contact.html" class="btn btn-danger">
+                            <i class="fa-solid fa-phone"></i> Get Quote
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Spacer for fixed header -->
+    <div style="height:70px"></div>
+
+    <!-- ================= BOTTOM NAVBAR ================= -->
+    <header id="bottomHeader" class="bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-2 gap-lg-3">
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">
+                                <i class="fa-solid fa-house"></i> Home
+                            </a>
+                        </li>
+
+                        <!-- About Us -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about-us.html">
+                                <i class="fa-solid fa-info-circle"></i> About Us
+                            </a>
+                        </li>
+
+                        <!-- Products (Dropdown) -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="products.html" id="productsDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-boxes-stacked"></i> Products
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="./products/closed-die-forging.html">
+                                        Closed Die Forging
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./products/open-die-forging.html">
+                                        Open Die Forging
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./products/ring-rolling.html">
+                                        Ring Rolling Components
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./products/machined-components.html">
+                                        CNC / VMC Machined Components
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./products/Oil-gas-sector-components.html">
+                                        Oil & Gas Sector Components
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="./products/material-grades.html">
+                                        Material Grades
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <!-- capabilities -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="capabilities.html">
+                                <i class="fa-solid fa-cogs"></i> Capabilities
+                            </a>
+                        </li>
+                        <!-- Quality -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="quality.html">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i> Quality
+                            </a>
+                        </li>
+
+
+
+                        <!-- Industries -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="industries.html">
+                                <i class="fa-solid fa-industry"></i> Industries
+                            </a>
+                        </li>
+
+                        <!-- Contact / Get In Touch -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">
+                                <i class="fa-solid fa-envelope"></i> Get In Touch
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- HERO ABOUT -->
+    <section class="about-hero py-5">
+        <div class="container text-center py-5">
+            <h1 class="fw-bold mb-3 text-dark">Forging Strength. Engineering Trust.</h1>
+            <p class=" lead">
+                Delivering world-class forged & machined components for critical industrial applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- ABOUT INTRO -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc"
+                        class="img-fluid rounded shadow" alt="Forging Industry">
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-3">About Tech Mak Solutions</h3>
+                    <p class="text-muted">
+                        Tech Mak Solutions is a trusted manufacturer and supplier of
+                        <strong>high-performance forged and precision-machined components</strong>
+                        serving the Oil & Gas, Heavy Engineering, Power Generation, and Energy sectors.
+                    </p>
+                    <p class="text-muted">
+                        Backed by more than <strong>20 years of engineering excellence</strong>,
+                        we deliver components designed to perform reliably in
+                        extreme pressure, temperature, and load conditions.
+                    </p>
+                    <p class="text-muted mb-0">
+                        Our advanced forging facilities and strong vendor network across India
+                        enable us to provide <strong>superior quality, competitive pricing,
+                            and on-time delivery</strong>.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section class="py-5 bg-light">
+        <div class="container text-center mb-5">
+            <h3 class="fw-bold">Our Core Capabilities</h3>
+            <p class="text-muted mt-2">
+                Advanced forging solutions engineered for strength, precision, and durability.
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="bg-white p-4 rounded shadow-lg about-card h-100">
+                        <img src="https://images.unsplash.com/photo-1590650046871-92c887180603"
+                            class="img-fluid rounded mb-3" alt="">
+                        <h5 class="fw-semibold">Closed Die Forging</h5>
+                        <p class="text-muted small">
+                            High-volume forged components with excellent dimensional accuracy
+                            and superior mechanical strength.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-white p-4 rounded shadow-lg about-card h-100">
+                        <img src="https://images.unsplash.com/photo-1590650046871-92c887180603"
+                            class="img-fluid rounded mb-3" alt="">
+                        <h5 class="fw-semibold">Open Die Forging</h5>
+                        <p class="text-muted small">
+                            Large and heavy forgings engineered for demanding industrial
+                            and structural applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-white p-4 rounded shadow-lg about-card h-100">
+                        <img src="https://images.unsplash.com/photo-1590650046871-92c887180603"
+                            class="img-fluid rounded mb-3" alt="">
+                        <h5 class="fw-semibold">Ring Rolling & Machining</h5>
+                        <p class="text-muted small">
+                            Precision-engineered ring rolled components and machining
+                            for critical rotating and pressure equipment.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-5">
+        <div class="container text-center mb-5">
+            <h3 class="fw-bold">Why Choose Tech Mak Solutions</h3>
+            <p class="text-muted">
+                Your reliable partner for critical forged components.
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="p-4 bg-white shadow-lg rounded h-100 about-card">
+                        <div class="icon-box"><i class="fa-solid fa-industry"></i></div>
+                        <h6 class="fw-semibold">20+ Years Experience</h6>
+                        <p class="text-muted small mb-0">
+                            Proven expertise across complex industrial applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="p-4 bg-white shadow-lg rounded h-100 about-card">
+                        <div class="icon-box"><i class="fa-solid fa-weight-hanging"></i></div>
+                        <h6 class="fw-semibold">1 kg – 2000 kg Range</h6>
+                        <p class="text-muted small mb-0">
+                            From small precision parts to heavy forgings.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="p-4 bg-white shadow-lg rounded h-100 about-card">
+                        <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h6 class="fw-semibold">Certified Quality</h6>
+                        <p class="text-muted small mb-0">
+                            100% material traceability & strict quality control.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="p-4 bg-white shadow-lg rounded h-100 about-card">
+                        <div class="icon-box"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h6 class="fw-semibold">On-Time Delivery</h6>
+                        <p class="text-muted small mb-0">
+                            Strong vendor network ensuring timely execution.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm about-card h-100">
+                        <h4 class="fw-semibold mb-3">Our Vision</h4>
+                        <p class="text-muted mb-0">
+                            To be a globally recognized leader in forging solutions,
+                            delivering superior-quality components through innovation,
+                            integrity, and engineering excellence.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm about-card h-100">
+                        <h4 class="fw-semibold mb-3">Our Mission</h4>
+                        <ul class="text-muted mb-0">
+                            <li>Deliver international-standard forged & machined components</li>
+                            <li>Build long-term partnerships based on trust and transparency</li>
+                            <li>Continuously improve through technology and innovation</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h3 class="fw-bold">Product Expertise</h3>
+                <p class="text-muted mt-2">
+                    A comprehensive range of forged components engineered for performance and reliability.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="bg-white p-4 rounded-5 shadow-lg section-card h-100">
+                        <h5 class="fw-semibold mb-3">Standard Forged Components</h5>
+                        <ul class="text-muted list-icon mb-0">
+                            <li>Flanges</li>
+                            <li>Rings</li>
+                            <li>Shafts</li>
+                            <li>Gears</li>
+                            <li>Sleeves</li>
+                            <li>Bushes</li>
+                            <li>Discs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-white p-4 rounded-5 shadow-lg section-card h-100">
+                        <h5 class="fw-semibold mb-3">Customized Forgings</h5>
+                        <p class="text-muted">
+                            We specialize in manufacturing customized forged components
+                            strictly as per <strong>customer drawings, material grades,
+                                and international standards</strong>.
+                        </p>
+                        <p class="text-muted mb-0">
+                            Our engineering team supports design validation, material selection,
+                            and production feasibility.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-white p-4 rounded-5 shadow-lg section-card h-100">
+                        <h5 class="fw-semibold mb-3">Weight Range</h5>
+                        <p class="display-6 fw-bold text-primary">1 kg – 2000 kg</p>
+                        <p class="text-muted mb-0">
+                            Capability to manufacture both small precision components
+                            and heavy-duty industrial forgings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h3 class="fw-bold">Industries We Serve</h3>
+                <p class="text-muted mt-2">
+                    Supplying critical forged components across diverse industrial sectors.
+                </p>
+            </div>
+
+            <div class="row g-4 text-center">
+                <div class="col-md-2 col-6">
+                    <div class="p-4 bg-white shadow-sm rounded section-card">
+                        <i class="fa-solid fa-oil-well fs-2 text-primary mb-2"></i>
+                        <p class="fw-semibold mb-0">Oil & Gas</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="p-4 bg-white shadow-sm rounded section-card">
+                        <i class="fa-solid fa-industry fs-2 text-primary mb-2"></i>
+                        <p class="fw-semibold mb-0">Heavy Engineering</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="p-4 bg-white shadow-sm rounded section-card">
+                        <i class="fa-solid fa-bolt fs-2 text-primary mb-2"></i>
+                        <p class="fw-semibold mb-0">Power & Energy</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="p-4 bg-white shadow-sm rounded section-card">
+                        <i class="fa-solid fa-mountain fs-2 text-primary mb-2"></i>
+                        <p class="fw-semibold mb-0">Mining</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="p-4 bg-white shadow-sm rounded section-card">
+                        <i class="fa-solid fa-bridge fs-2 text-primary mb-2"></i>
+                        <p class="fw-semibold mb-0">Infrastructure</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="p-4 bg-white shadow-sm rounded section-card">
+                        <i class="fa-solid fa-wrench fs-2 text-primary mb-2"></i>
+                        <p class="fw-semibold mb-0">Fabrication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-3">Quality Assurance</h3>
+                    <p class="text-muted">
+                        Quality is the foundation of every process at <strong>Tech Mak Solutions</strong>.
+                        Our robust quality management system ensures complete compliance
+                        with national and international standards.
+                    </p>
+
+                    <ul class="text-muted list-icon">
+                        <li>Complete Material Traceability</li>
+                        <li>Ultrasonic Testing (UT)</li>
+                        <li>Mechanical & Chemical Property Verification</li>
+                        <li>Precision Dimensional Inspection</li>
+                        <li>Heat Treatment as per Applicable Standards</li>
+                        <li>Compliance with International Specifications</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837"
+                        class="img-fluid rounded shadow" alt="Quality Inspection">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-black text-light pt-5">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- About Company -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./images/logo.png" alt="Tech Mak Solutions Logo" style="width: 150px; height: auto;"
+                            class="me-2">
+                        <h5 class="fw-bold text-white mb-0">TechMak Solutions</h5>
+                    </div>
+                    <p class="text-white">
+                        Delivering high-strength forged & machined components with world-class quality and reliability.
+                        Serving industries like Oil & Gas, Heavy Engineering, and more.
+                    </p>
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Products</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold text-white mb-3">Contact Info</h6>
+                    <p class="mb-2"><i class="fa-solid fa-location-dot me-2"></i>Industrial Area, Pune, Maharashtra –
+                        411045</p>
+                    <p class="mb-2"><i class="fa-solid fa-phone me-2"></i>+91 98765 43210</p>
+                    <p class="mb-2"><i class="fa-solid fa-envelope me-2"></i>info@techmaksolutions.com</p>
+                    <p class="mb-0"><i class="fa-solid fa-clock me-2"></i>Mon – Sat: 9:00 AM – 7:00 PM</p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold text-white mb-3">Follow Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-5"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-light">
+
+            <!-- Footer Bottom -->
+            <div class="row">
+                <div class="col-12 text-center py-4">
+                    &copy; 2026 Tech Mak Solutions. All Rights Reserved.
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================= BOOTSTRAP JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Toggle icon change -->
+    <script>
+        document.addEventListener('shown.bs.collapse', function (e) {
+            if (e.target.id === 'topNav') {
+                document.querySelector('#navbarToggler i')
+                    .classList.replace('fa-bars', 'fa-times');
+            }
+        });
+
+        document.addEventListener('hidden.bs.collapse', function (e) {
+            if (e.target.id === 'topNav') {
+                document.querySelector('#navbarToggler i')
+                    .classList.replace('fa-times', 'fa-bars');
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 900, once: true });
+    </script>
+
+
+</body>
+
+</html>

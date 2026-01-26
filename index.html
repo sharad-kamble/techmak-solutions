@@ -53,7 +53,7 @@
                         <a href="tel:+918010410293" class="nav-link text-white">
                             <i class="fa-solid fa-phone"></i> +91 XXXXX XXXXX
                         </a>
-                        <a href="#" class="btn btn-danger">
+                        <a href="./contact.html" class="btn btn-danger">
                             <i class="fa-solid fa-phone"></i> Get Quote
                         </a>
                     </div>
@@ -89,17 +89,53 @@
 
                         <!-- About Us -->
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="about.html">
+                            <a class="nav-link text-white" href="about-us.html">
                                 <i class="fa-solid fa-info-circle"></i> About Us
                             </a>
                         </li>
 
-                        <!-- Products -->
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="products.html">
+                        <!-- Products (Dropdown) -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="products.html" id="productsDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-boxes-stacked"></i> Products
                             </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="./products/closed-die-forging.html">
+                                        Closed Die Forging
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./products/open-die-forging.html">
+                                        Open Die Forging
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./products/ring-rolling.html">
+                                        Ring Rolling Components
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./products/machined-components.html">
+                                        CNC / VMC Machined Components
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./products/Oil-gas-sector-components.html">
+                                        Oil & Gas Sector Components
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="./products/material-grades.html">
+                                        Material Grades
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
+
 
                         <!-- capabilities -->
                         <li class="nav-item">
@@ -110,7 +146,7 @@
                         <!-- Quality -->
                         <li class="nav-item">
                             <a class="nav-link text-white" href="quality.html">
-                                <i class="fa-solid fa-cogs"></i> Quality
+                                <i class="fa-solid fa-magnifying-glass-chart"></i> Quality
                             </a>
                         </li>
 
@@ -403,7 +439,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card shadow-sm h-100 border-0 core-card text-center p-4">
                         <div class="mb-3">
-                            <i class="fa-solid fa-industry fa-2x text-warning"></i>
+                            <i class="fa-solid fa-industry fa-2x text-danger"></i>
                         </div>
                         <h5 class="fw-bold">20+ Years Industry Experience</h5>
                         <p class="text-muted mt-2">Proven expertise in delivering high-quality forging solutions across
@@ -414,7 +450,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card shadow-sm h-100 border-0 core-card text-center p-4">
                         <div class="mb-3">
-                            <i class="fa-solid fa-cogs fa-2x text-warning"></i>
+                            <i class="fa-solid fa-cogs fa-2x text-danger"></i>
                         </div>
                         <h5 class="fw-bold">Capability</h5>
                         <p class="text-muted mt-2">Closed Die, Open Die, and Ring Rolling – comprehensive forging
@@ -425,7 +461,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card shadow-sm h-100 border-0 core-card text-center p-4">
                         <div class="mb-3">
-                            <i class="fa-solid fa-ruler-combined fa-2x text-warning"></i>
+                            <i class="fa-solid fa-ruler-combined fa-2x text-danger"></i>
                         </div>
                         <h5 class="fw-bold">High Precision & Accuracy</h5>
                         <p class="text-muted mt-2">Ensuring dimensional accuracy for all components.</p>
@@ -435,7 +471,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card shadow-sm h-100 border-0 core-card text-center p-4">
                         <div class="mb-3">
-                            <i class="fa-solid fa-check-circle fa-2x text-warning"></i>
+                            <i class="fa-solid fa-check-circle fa-2x text-danger"></i>
                         </div>
                         <h5 class="fw-bold">Quality & Timely Delivery</h5>
                         <p class="text-muted mt-2">Strong focus on quality control and meeting delivery timelines.</p>
@@ -445,7 +481,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card shadow-sm h-100 border-0 core-card text-center p-4">
                         <div class="mb-3">
-                            <i class="fa-solid fa-handshake fa-2x text-warning"></i>
+                            <i class="fa-solid fa-handshake fa-2x text-danger"></i>
                         </div>
                         <h5 class="fw-bold">Customized Solutions</h5>
                         <p class="text-muted mt-2">Forging solutions tailored to client specifications.</p>
@@ -709,103 +745,7 @@
         </div>
     </section>
 
-    <section class="py-5 bg-light">
-        <div class="container">
 
-            <!-- Section Heading -->
-            <div class="text-center mb-5">
-                <span class="badge bg-warning text-dark px-3 py-2 mb-3">
-                    Contact Us
-                </span>
-                <h2 class="fw-bold">Get in Touch With Tech Mak Solutions</h2>
-                <p class="text-muted mt-2">
-                    We’re here to assist you with inquiries about our forged & machined components, services, or any
-                    project requirements.
-                    Reach out to us anytime.
-                </p>
-            </div>
-
-            <div class="row g-4">
-
-                <!-- Contact Info -->
-                <div class="col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm p-4">
-                        <h5 class="fw-bold mb-4">Contact Information</h5>
-
-                        <div class="d-flex mb-3">
-                            <i class="fa-solid fa-location-dot text-warning fs-5 me-3"></i>
-                            <p class="mb-0 text-muted">
-                                Tech Mak Solutions,<br>
-                                Industrial Area, Pune, Maharashtra – 411045
-                            </p>
-                        </div>
-
-                        <div class="d-flex mb-3">
-                            <i class="fa-solid fa-phone text-warning fs-5 me-3"></i>
-                            <p class="mb-0 text-muted">
-                                +91 98765 43210
-                            </p>
-                        </div>
-
-                        <div class="d-flex mb-3">
-                            <i class="fa-solid fa-envelope text-warning fs-5 me-3"></i>
-                            <p class="mb-0 text-muted">
-                                info@techmaksolutions.com
-                            </p>
-                        </div>
-
-                        <div class="d-flex">
-                            <i class="fa-solid fa-clock text-warning fs-5 me-3"></i>
-                            <p class="mb-0 text-muted">
-                                Mon – Sat: 9:00 AM – 7:00 PM
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="col-lg-8">
-                    <div class="card border-0 shadow-sm p-4">
-                        <h5 class="fw-bold mb-4">Send Us a Message</h5>
-
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Full Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <select class="form-select" required>
-                                        <option selected disabled>Select Inquiry Type</option>
-                                        <option>Forged Components</option>
-                                        <option>Machined Components</option>
-                                        <option>Custom Projects</option>
-                                        <option>Partnership / Collaboration</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-warning px-5">
-                                        Submit Enquiry
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
     <footer class="bg-black text-light pt-5">
         <div class="container">
 
