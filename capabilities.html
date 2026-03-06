@@ -21,6 +21,113 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
+    <style>
+        /* SECTION BG */
+        .capability-section {
+            background: #f8fafc;
+        }
+
+        /* HEADING */
+        .section-heading span {
+            color: #0284C7;
+        }
+
+        /* CARD */
+        .capability-card {
+            background: #fff;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+            transition: .4s;
+            height: 100%;
+        }
+
+        .capability-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .capability-card h5 {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .capability-card p {
+            color: #6c757d;
+        }
+
+        .capability-card ul {
+            padding-left: 18px;
+            color: #6c757d;
+        }
+
+
+        /* SECTION */
+        .material-section {
+            background: #f8fafc;
+        }
+
+        /* Heading */
+        .section-heading span {
+            color: #0284C7;
+        }
+
+        /* CARD DESIGN */
+        .material-card {
+            background: #fff;
+            border-radius: 14px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            position: relative;
+        }
+
+        /* Image */
+        .material-card img {
+            height: 230px;
+            width: 100%;
+            object-fit: cover;
+            transition: 0.6s;
+        }
+
+        /* Content */
+        .material-card h5 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .material-card p {
+            color: #6c757d;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        /* Hover Premium Effect */
+        .material-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+        }
+
+        .material-card:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Top Premium Line */
+        .material-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 4px;
+            width: 0%;
+            background: #0284C7;
+            transition: 0.4s;
+        }
+
+        .material-card:hover::before {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -175,85 +282,91 @@
         </div>
     </header>
 
-    <section class="py-5 bg-light">
+    <section class="py-5 capability-section">
         <div class="container">
 
-            <!-- Section Header -->
+            <!-- Heading -->
             <div class="text-center mb-5">
-                <h2 class="fw-bold display-6">Manufacturing Capabilities</h2>
-                <p class="text-muted mt-2">
-                    End-to-end forging, heat treatment, and inspection capabilities
-                    delivering strength, precision, and reliability.
+                <h2 class="fw-bold display-6 section-heading">
+                    Manufacturing <span>Capabilities</span>
+                </h2>
+                <p class="text-muted">
+                    End-to-end forging, heat treatment and inspection solutions
+                    engineered for strength, precision and reliability.
                 </p>
             </div>
 
             <div class="row g-4">
 
-                <!-- Forging Capacity -->
+                <!-- CARD -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded-5 shadow-lg h-100">
-                        <h4 class="fw-semibold mb-3">Forging Capacity</h4>
-                        <p class="text-muted">
-                            We offer a wide range of forging solutions designed to meet
-                            demanding industrial applications with high strength and
-                            dimensional accuracy.
+                    <div class="capability-card h-100">
+                        <h5>Forging Capacity</h5>
+                        <p>
+                            Wide range of forging solutions designed for demanding
+                            industrial applications with superior mechanical strength.
                         </p>
-                        <ul class="text-muted mb-0">
-                            <li>Closed Die Forgings ranging from <strong>1 kg to 50 kg</strong></li>
-                            <li>Open Die Forgings ranging from <strong>1 kg to 1000 kg</strong></li>
-                            <li>Ring Rolling capability with diameters from <strong>&#8960; 200 mm to 3000 mm</strong>
-                            </li>
+
+                        <ul>
+                            <li>Closed Die Forgings: <strong>1 kg – 50 kg</strong></li>
+                            <li>Open Die Forgings: <strong>1 kg – 1000 kg</strong></li>
+                            <li>Ring Rolling: <strong>Ø 200 mm – 3000 mm</strong></li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Heat Treatment -->
+                <!-- CARD -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded-5 shadow-lg h-100">
-                        <h4 class="fw-semibold mb-3">Heat Treatment</h4>
-                        <p class="text-muted">
-                            Our in-house heat treatment processes enhance mechanical
-                            properties, ensuring optimal performance, durability,
-                            and metallurgical consistency.
+                    <div class="capability-card h-100">
+                        <h5>Heat Treatment</h5>
+                        <p>
+                            Controlled heat treatment processes ensuring durability,
+                            metallurgical stability and improved mechanical properties.
                         </p>
-                        <ul class="text-muted mb-0">
-                            <li>Normalizing for uniform grain structure</li>
-                            <li>Hardening & Tempering for improved strength and toughness</li>
-                            <li>Annealing for stress relief and machinability</li>
-                            <li>Solution Annealing for corrosion-resistant alloys</li>
+
+                        <ul>
+                            <li>Normalizing</li>
+                            <li>Hardening & Tempering</li>
+                            <li>Annealing</li>
+                            <li>Solution Annealing</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Testing & Inspection -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="bg-white p-4 rounded-5 shadow-lg h-100">
-                        <h4 class="fw-semibold mb-3">Testing & Inspection</h4>
-                        <p class="text-muted">
-                            Stringent quality control and inspection procedures ensure
-                            compliance with international standards and customer
-                            specifications.
+                <!-- CARD -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card h-100">
+                        <h5>Testing & Inspection</h5>
+                        <p>
+                            Strict inspection procedures ensuring compliance
+                            with international quality standards.
                         </p>
-                        <ul class="text-muted mb-0">
-                            <li>100% Magnetic Particle Inspection (MPI)</li>
-                            <li>Ultrasonic Testing (UT) for internal defect detection</li>
-                            <li>Hardness testing for material verification</li>
-                            <li>Dimensional inspection for precision assurance</li>
-                            <li>Third-party inspection available on request</li>
+
+                        <ul>
+                            <li>Magnetic Particle Inspection</li>
+                            <li>Ultrasonic Testing</li>
+                            <li>Hardness Testing</li>
+                            <li>Dimensional Inspection</li>
+                            <li>Third-Party Inspection</li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- CARD -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded-5 shadow-lg h-100">
-                        <h4 class="fw-semibold mb-3">Machining</h4>
-                        <p class="text-muted">
-                            add description
+                    <div class="capability-card h-100">
+                        <h5>Machining</h5>
+                        <p>
+                            Precision CNC machining ensuring tight tolerances,
+                            dimensional accuracy and superior surface finish
+                            for critical industrial components.
                         </p>
-                        <!-- <ul class="text-muted mb-0">
-                            <li>Closed Die Forgings ranging from <strong>1 kg to 50 kg</strong></li>
-                            <li>Open Die Forgings ranging from <strong>1 kg to 1000 kg</strong></li> -->
-                        <li>Ring Rolling capability with diameters from <strong>add description</strong>
-                        </li>
+
+                        <ul>
+                            <li>CNC Turning & Milling</li>
+                            <li>Finish Machining</li>
+                            <li>Boring & Drilling</li>
+                            <li>Custom Machined Components</li>
                         </ul>
                     </div>
                 </div>
@@ -261,128 +374,101 @@
             </div>
         </div>
     </section>
-    <!-- CONTENT SECTION -->
-    <section class="py-5 bg-light">
+
+    <section class="py-5 material-section">
         <div class="container">
 
             <div class="text-center mb-5">
-                <h2 class="fw-bold">MATERIAL GRADES </h2>
-                <!-- <p class="text-muted mt-2">
-                    Tech Mak Solutions offers a wide range of material grades
-                    suitable for forging and precision machining applications.
-                </p> -->
+                <h2 class="fw-bold section-heading">
+                    Material <span>Grades</span>
+                </h2>
             </div>
 
             <div class="row g-4">
 
-                <!-- Carbon Steel -->
+                <!-- MATERIAL CARD -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 text-center material-card">
-                        <img src="./images/materials/carbon-steel.jpg" class="img-fluid rounded mb-3"
-                            alt="Carbon Steel">
-
-                        <i class="fa-solid fa-industry fa-2x text-primary mb-2"></i>
-                        <h5 class="fw-semibold">Carbon Steel</h5>
-                        <p class="text-muted small">
-                            Strong, durable, and cost-effective material widely used
-                            for structural components, shafts, flanges, and general engineering parts.
-                        </p>
+                    <div class="material-card h-100">
+                        <img src="./images/materials/carbon-steel.jpg" class="img-fluid">
+                        <div class="p-4">
+                            <h5>Carbon Steel</h5>
+                            <p>
+                                Durable and cost-effective material widely used for
+                                shafts, flanges and structural engineering components.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Alloy Steel -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 text-center material-card">
-                        <img src="./images/materials/alloy-steel.jpg" class="img-fluid rounded mb-3" alt="Alloy Steel">
-
-                        <i class="fa-solid fa-gear fa-2x text-primary mb-2"></i>
-                        <h5 class="fw-semibold">Alloy Steel</h5>
-                        <p class="text-muted small">
-                            Enhanced mechanical properties with superior strength,
-                            toughness, and wear resistance for high-load applications.
-                        </p>
+                    <div class="material-card h-100">
+                        <img src="./images/materials/alloy-steel.jpg" class="img-fluid">
+                        <div class="p-4">
+                            <h5>Alloy Steel</h5>
+                            <p>
+                                Superior strength and wear resistance suitable
+                                for heavy load industrial applications.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Stainless Steel -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 text-center material-card">
-                        <img src="./images/materials/stainless-steel.jpg" class="img-fluid rounded mb-3"
-                            alt="Stainless Steel">
-
-                        <i class="fa-solid fa-shield-halved fa-2x text-primary mb-2"></i>
-                        <h5 class="fw-semibold">Stainless Steel</h5>
-                        <p class="text-muted small">
-                            Excellent corrosion resistance and durability,
-                            ideal for harsh environments and chemical exposure.
-                        </p>
+                    <div class="material-card h-100">
+                        <img src="./images/materials/stainless-steel.jpg" class="img-fluid">
+                        <div class="p-4">
+                            <h5>Stainless Steel</h5>
+                            <p>
+                                Excellent corrosion resistance ideal for harsh
+                                chemical and marine environments.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tool Steel -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 text-center material-card">
-                        <img src="./images/materials/tool-steel.jpg" class="img-fluid rounded mb-3" alt="Tool Steel">
-
-                        <i class="fa-solid fa-hammer fa-2x text-primary mb-2"></i>
-                        <h5 class="fw-semibold">Tool Steel</h5>
-                        <p class="text-muted small">
-                            High hardness and wear resistance material suitable
-                            for dies, molds, and tooling applications.
-                        </p>
+                    <div class="material-card h-100">
+                        <img src="./images/materials/tool-steel.jpg" class="img-fluid">
+                        <div class="p-4">
+                            <h5>Tool Steel</h5>
+                            <p>
+                                High hardness material suitable for dies,
+                                molds and tooling applications.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Special Grades -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 text-center material-card">
-                        <img src="./images/materials/special-grades.jpg" class="img-fluid rounded mb-3"
-                            alt="Special Material Grades">
-
-                        <i class="fa-solid fa-star fa-2x text-primary mb-2"></i>
-                        <h5 class="fw-semibold">Special Grades</h5>
-                        <p class="text-muted small">
-                            Custom material grades supplied as per
-                            customer specifications, drawings, and performance requirements.
-                        </p>
+                    <div class="material-card h-100">
+                        <img src="./images/materials/special-grades.jpg" class="img-fluid">
+                        <div class="p-4">
+                            <h5>Ring Rolling</h5>
+                            <p>
+                                Seamless rolled rings manufactured for pressure vessels,
+                                bearings and rotating equipment applications.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 text-center material-card">
-                        <img src="./images/materials/special-grades.jpg" class="img-fluid rounded mb-3"
-                            alt="Special Material Grades">
 
-                        <i class="fa-solid fa-star fa-2x text-primary mb-2"></i>
-                        <h5 class="fw-semibold">Ring Rolling </h5>
-                        <p class="text-muted small">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur commodi natus
-                            repudiandae labore. Nostrum libero dolore qui vel cumque eius deserunt enim nam laudantium
-                            facere. Reprehenderit repellendus molestias error repudiandae.
-                        </p>
-                    </div>
-                </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 text-center material-card">
-                        <img src="./images/materials/special-grades.jpg" class="img-fluid rounded mb-3"
-                            alt="Special Material Grades">
-
-                        <i class="fa-solid fa-star fa-2x text-primary mb-2"></i>
-                        <h5 class="fw-semibold">Machining</h5>
-                        <p class="text-muted small">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quos architecto ea quis
-                            excepturi, illo beatae nisi eos iure quod quibusdam, a odio reprehenderit rerum laudantium
-                            rem dolor doloribus cupiditate!
-                        </p>
+                    <div class="material-card h-100">
+                        <img src="./images/Brown Minimalist Blacksmith YouTube Thumbnail_20260201_145007_0000.png"
+                            class="img-fluid">
+                        <div class="p-4">
+                            <h5>Machining</h5>
+                            <p>
+                                Precision machining delivering high dimensional
+                                accuracy and superior surface finish.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
             </div>
-
         </div>
     </section>
-
-
-
 
 
     <footer class="bg-black text-light pt-5">
